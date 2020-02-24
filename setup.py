@@ -20,6 +20,7 @@ setup(
         "packaging",
         "requests",
         "thrift-sasl==0.2.1",  # impyla can't connect properly to Hive with a later version
+        "presto-python-client['kerberos']",
     ],
     packages=find_packages(),
     python_requires=">=3"
